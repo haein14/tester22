@@ -1,0 +1,172 @@
+body {
+    font-size: smaller;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    color: #030303;
+    width: 600px;
+    height: 1500px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+}
+
+.point {
+    text-align: right;
+}
+
+.grid1 {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-rows: repeat(7, 30px);
+    gap: 30px 20px;
+    margin-top: 20px;
+}
+
+
+.req {
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(139, 19, 139);
+}
+
+.grid1 input,
+button {
+    border-radius: 4px;
+    border: 1px solid lightgray;
+}
+
+#check,
+#code,
+button {
+    border: 1px solid rgb(139, 19, 139);
+    color: rgb(139, 19, 139);
+    background-color: white;
+    cursor: pointer;
+}
+
+.join {
+    width: 300px;
+    height: 40px;
+    background-color: rgb(139, 19, 139);
+    color: white;
+    margin: 40px;
+}
+
+.caution {
+    font-size: smaller;
+    margin-top: -25px;
+    margin-left: 5px;
+    text-align: left;
+}
+
+
+
+.grid2 {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-rows: repeat(3, 30px);
+    gap: 40px 20px;
+    margin-top: 20px;
+}
+
+.flex1,.flex2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* height: 10px; */
+}
+
+#a+label::before,
+#b+label::before,
+#c+label::before{
+    content:'';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background:url(../images/Radio.svg);
+    background-size: cover;
+    margin-right: 8px;
+    vertical-align: -7px;
+    border: solid 1px white;
+
+}
+
+#a :checked +label::before,
+#b :checked +label::before,
+#c :checked +label::before{
+    background-image: url(../0827img/Radio-1.svg)
+}
+
+
+
+::placeholder {
+    padding-left: 10px;
+    font-weight: lighter;
+}
+
+.grid3 {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 110px 20px 350px 1fr;
+    grid-template-rows: 100px repeat(4, 30px);
+    margin: 20px 20px;
+    text-align: start;
+   
+    gap: 20px 10px;
+
+}
+
+.grid3 img {
+    vertical-align:top;
+    width:20px ;
+}
+
+.sign img{width: inherit;}
+.sign {
+    grid-row: 1/span 6;
+}
+
+.complete {
+   
+    grid-column: 3/-1;
+    grid-row: 1/ span 1;
+    font-size: 20px;
+}
+
+.caution2 {
+    font-size: 12px;
+    color: #646363;
+}
+
+.details {
+    border: none;
+    color: rgb(57, 15, 97);
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+input+label::before{
+
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/Check\ \(3\).svg);
+    background-size: cover;
+
+}
+
+
+
+.linebold{ border: 1px solid rgb(51,51, 51);}
+
+
+.sr-only{ content: ''}

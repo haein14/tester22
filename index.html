@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/회원가입.css">
+    <link rel="stylesheet preload" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="icon" href="images/favicon (2).ico">
+    <link rel="stylesheet preload" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <title>회원가입</title>
+</head>
+
+<body>
+    <h1>회원가입</h1>
+    <div class="point"><img class="req" src="Require.svg" alt="">필수입력사항</div>
+    <form action="#" method="post">
+<div class="linebold" role="presentation"></div>
+        <hr>
+
+        <div class="grid1">
+            <label for="id">아이디<img class="req" src="Require.svg" alt=""></label>
+            <input type="text" id="id" placeholder="아이디를 입력해주세요" autofocus required>
+
+            <input type="submit" id="check" value="중복확인">
+
+            <label for="pw">비밀번호<img class="req" src="Require.svg" alt=""></label>
+            <input type="password" id="pw" placeholder="비밀번호를 입력해주세요" required>
+            <div></div>
+
+            <label for="pw">비밀번호 확인<img class="req" src="Require.svg" alt=""></label>
+            <input type="password" id="pw" placeholder="비밀번호를 한번 더 입력해주세요" required>
+            <div></div>
+            <label for="name">이름<img class="req" src="Require.svg" alt=""></label>
+            <input type="text" id="name" placeholder="이름을 입력해주세요" required>
+            <div></div>
+            <label for="mail">이메일<img class="req" src="Require.svg" alt=""></label>
+            <input type="email" id="mail" placeholder="예) haeinory@mail.com" required>
+            <input type="submit" id="check" value="중복확인">
+
+            <label for="num">휴대폰<img class="req" src="Require.svg" alt=""></label>
+            <input type="tel" id="num" placeholder="숫자만 입력해주세요" required>
+            <input type="submit" id="code" value="인증번호 받기">
+
+            <label for="ad">주소<img class="req" src="Require.svg" alt=""></label>
+            <button class="searchad"><a href="#">주소검색</a></button>
+            <div></div>
+
+            <div></div>
+            <div class="caution">배송지에 따라 상품 정보가 달라질 수 있습니다.</div>
+            <div></div>
+        </div>
+
+
+        <div class="grid2">
+            <label for="sex"> 성별</label>
+
+            <div class="flex1">
+                  <input class="sr_only"  type="radio" name="radio-a" id="a">
+                <label  for="a">남자</label>
+              
+
+                <input type="radio" name="radio-a" id="b">
+                <label for="b">여자</label>
+                <input type="radio" name="radio-a" id="c">
+                <label for="c">선택안함</label>
+                <label>
+                    <input type="radio" name="radio-a">D</label>
+
+            </div>
+
+            <div></div>
+            <label for="birth">생년월일</label>
+            <input type="number" placeholder="yyyy-mm-dd">
+            <div></div>
+            <label for="sex"> 추가입력 사항</label>
+            <div class="flex2">
+                <input type="radio" name="radio-b" id="d">
+                <label for="d">친구 초대 추천인 아이디</label>
+                <input type="radio" name="radio-b" id="e">
+                <label for="e">참여 이벤트명</label>
+
+            </div>
+            <div></div>
+        </div>
+    </form>
+    <hr>
+    <div class="grid3">
+        <label for="sign" class="sign">이용약관동의<img class="req" src="Require.svg" alt=""></label>
+
+       
+         <input class="sr_only" type="checkbox" id="agree1" >
+          <label for="agree1"> <span class="complete">전체 동의합니다 <br> 
+            <span class="caution2"> 선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용하실 수
+                있습니다.</span></span>
+</label>
+<div></div>
+       
+
+        <input class="sr_only" type="checkbox" id="agree2" name="none">
+        <label for="agree2">이용약관 동의 (필수) </label>
+        <button class="details"><a href="">약관보기</a></button>
+        <input type="checkbox" id="agree3"><label for="agree3">개인정보 수집 이용 동의 (필수)</label>
+        <button class="details"><a href="">약관보기</a></button>
+        <input type="checkbox" id="agree4"><label for="agree4">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택
+        )</label>
+        <button class="details"><a
+                href="">약관보기</a></button>
+        <input type="checkbox" id="agree5"><label for="agree5">본인은 만 14세 이상입니다. (필수)</label>
+
+
+
+    </div>
+
+
+    <hr>
+
+    <button type="submit" class="join">가입하기</button>
+
+</body>
+
+</html>
