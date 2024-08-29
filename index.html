@@ -61,9 +61,9 @@
                 <label  for="a">남자</label>
               
 
-                <input type="radio" name="radio-a" id="b">
+                <input  class="sr_only" type="radio" name="radio-a" id="b">
                 <label for="b">여자</label>
-                <input type="radio" name="radio-a" id="c">
+                <input class="sr_only"  type="radio" name="radio-a" id="c">
                 <label for="c">선택안함</label>
                 <label>
                     <input type="radio" name="radio-a">D</label>
@@ -71,14 +71,21 @@
             </div>
 
             <div></div>
-            <label for="birth">생년월일</label>
-            <input type="number" placeholder="yyyy-mm-dd">
+           
+            <label for="birth">생년월일</label> 
+            <div class="birth">
+            <input type="number" placeholder="yyyy" min="1970" max="2010">
+            <input type="number" placeholder="mm" min="1" max="12">
+            <input type="number" placeholder="dd" min="1" max="31">
+        
+        
+        </div>
             <div></div>
             <label for="sex"> 추가입력 사항</label>
             <div class="flex2">
-                <input type="radio" name="radio-b" id="d">
+                <input  class="sr_only" type="radio" name="radio-b" id="d">
                 <label for="d">친구 초대 추천인 아이디</label>
-                <input type="radio" name="radio-b" id="e">
+                <input  class="sr_only"type="radio" name="radio-b" id="e">
                 <label for="e">참여 이벤트명</label>
 
             </div>
@@ -89,25 +96,30 @@
     <div class="grid3">
         <label for="sign" class="sign">이용약관동의<img class="req" src="Require.svg" alt=""></label>
 
-       
+       <div class="agree1">
          <input class="sr_only" type="checkbox" id="agree1" >
-          <label for="agree1"> <span class="complete">전체 동의합니다 <br> 
+          <label for="agree1" class="complete">전체 동의합니다 <br>
             <span class="caution2"> 선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용하실 수
-                있습니다.</span></span>
+                있습니다.</span></label></div>
+
 </label>
+<div></div>
 <div></div>
        
 
         <input class="sr_only" type="checkbox" id="agree2" name="none">
         <label for="agree2">이용약관 동의 (필수) </label>
         <button class="details"><a href="">약관보기</a></button>
-        <input type="checkbox" id="agree3"><label for="agree3">개인정보 수집 이용 동의 (필수)</label>
+        <div></div>
+        <input  class="sr_only" type="checkbox" id="agree3"><label for="agree3">개인정보 수집 이용 동의 (필수)</label>
         <button class="details"><a href="">약관보기</a></button>
-        <input type="checkbox" id="agree4"><label for="agree4">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택
+        <div></div>
+        <input  class="sr_only" type="checkbox" id="agree4"><label for="agree4">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택
         )</label>
         <button class="details"><a
                 href="">약관보기</a></button>
-        <input type="checkbox" id="agree5"><label for="agree5">본인은 만 14세 이상입니다. (필수)</label>
+     <div></div>
+        <input  class="sr_only"type="checkbox" id="agree5"><label for="agree5">본인은 만 14세 이상입니다. (필수)</label>
 
 
 
